@@ -10,8 +10,9 @@ namespace GenericsAndExtensionMethods
     {
         public static void ChangeTires<T> (this Shop<T> shop,  Vehicle vehicle) where T : Vehicle
 
+
         {
-            vehicle.ChangeTires = true;
+            vehicle.TiresChanged = true;
 
             if (vehicle is Sedan)
             {
