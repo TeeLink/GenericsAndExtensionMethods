@@ -8,7 +8,7 @@ namespace GenericsAndExtensionMethods
 {
     public static class ShopExtensions
     {
-        public static void ChangeTires<T> (this Shop<T> shop,  Vehicle vehicle) where T : Vehicle
+        public static void ChangeTires<T>(this Shop<T> shop, Vehicle vehicle) where T : Vehicle
 
 
         {
