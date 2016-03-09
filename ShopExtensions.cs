@@ -12,7 +12,7 @@ namespace GenericsAndExtensionMethods
 
 
         {
-            vehicle.TiresChanged = true;
+            vehicle.AreTiresChanged = true;
 
             if (vehicle is Sedan)
             {

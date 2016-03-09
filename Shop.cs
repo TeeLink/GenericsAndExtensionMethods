@@ -10,7 +10,7 @@ namespace GenericsAndExtensionMethods
     {
         public void FillUp(T vehicle)
         {
-            vehicle.TankFilled = true;
+            vehicle.IsTankFilled = true;
 
             if (vehicle is Sedan)
             {
@@ -29,7 +29,7 @@ namespace GenericsAndExtensionMethods
 
         public void ChangeOil(T vehicle)
         {
-            vehicle.OilChanged = true;
+            vehicle.IsOilChanged = true;
 
             if (vehicle is Sedan)
             {

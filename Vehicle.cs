@@ -8,9 +8,9 @@ namespace GenericsAndExtensionMethods
 {
     public class Vehicle
     {
-        public bool OilChanged { get; set; }
-        public bool TiresChanged { get; set; }
-        public bool TankFilled { get; set; }
+        public bool IsOilChanged { get; set; }
+        public bool AreTiresChanged { get; set; }
+        public bool IsTankFilled { get; set; }
     }
 
 
