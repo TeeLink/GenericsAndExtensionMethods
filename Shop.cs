@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GenericsAndExtensionMethods
 {
-    class Shop<T> where T : Vehicle
+    public class Shop<T> where T : Vehicle
     {
         public void FillUp(T vehicle)
         {
@@ -14,15 +14,15 @@ namespace GenericsAndExtensionMethods
 
             if (vehicle is Sedan)
             {
-                Console.WriteLine("Tank have been filled with regular gas.");
+                Console.WriteLine("Tank on sedan has been filled with regular gas.");
             }
             else if (vehicle is Truck)
             {
-                Console.WriteLine("Tank have been filled with diesel.");
+                Console.WriteLine("Tank on truck has been filled with diesel.");
             }
             else 
             {
-                Console.WriteLine("Tank have been filled with high performance fuel.");
+                Console.WriteLine("Tank on race car has been filled with high performance fuel.");
             }
 
         }
@@ -30,7 +30,19 @@ namespace GenericsAndExtensionMethods
         public void ChangeOil(T vehicle)
         {
             vehicle.OilChanged = true;
-            Console.WriteLine("Oil has been changed.");
+
+            if (vehicle is Sedan)
+            {
+                Console.WriteLine("Sedan's oil has been changed.");
+            }
+            else if (vehicle is Truck)
+            {
+                Console.WriteLine("Truck's oil has been changed.");
+            }
+            else
+            {
+                Console.WriteLine("Race car's oil has been changed.");
+            }
         }
     }
 

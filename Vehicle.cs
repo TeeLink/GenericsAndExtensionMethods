@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GenericsAndExtensionMethods
 {
-    class Vehicle
+    public class Vehicle
     {
         public bool OilChanged { get; set; }
         public bool TiresChanged { get; set; }
