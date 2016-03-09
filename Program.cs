@@ -19,9 +19,9 @@ namespace GenericsAndExtensionMethods
         Truck t = new Truck();
         RaceCar rc = new RaceCar();
         
-        Console.WriteLine($"Sedan oil changed: {s.OilChanged}. Sedan tires filled: {s.TiresChanged}. Sedan tank filled {s.TankFilled}.");
-        Console.WriteLine($"Truck oil changed: {t.OilChanged}. Truck tires filled: {t.TiresChanged}. Truck tank filled {t.TankFilled}.");
-        Console.WriteLine($"Race car oil changed: {rc.OilChanged}. Race car tires filled: {rc.TiresChanged}. Race car tank filled {rc.TankFilled}.");
+        Console.WriteLine($"Sedan oil changed: {s.OilChanged}. Sedan tires filled: {s.TiresChanged}. Sedan fuel tank filled {s.TankFilled}.");
+        Console.WriteLine($"Truck oil changed: {t.OilChanged}. Truck tires filled: {t.TiresChanged}. Truck fuel tank filled {t.TankFilled}.");
+        Console.WriteLine($"Race car oil changed: {rc.OilChanged}. Race car tires filled: {rc.TiresChanged}. Race car fuel tank filled {rc.TankFilled}.");
 
 
 
@@ -37,9 +37,9 @@ namespace GenericsAndExtensionMethods
         boogies.ChangeOil(rc);
         boogies.ChangeTires(rc);
 
-        Console.WriteLine($"Sedan oil changed: {s.OilChanged}. Sedan tires filled: {s.TiresChanged}. Sedan tank filled {s.TankFilled}.");
-        Console.WriteLine($"Truck oil changed: {t.OilChanged}. Truck tires filled: {t.TiresChanged}. Truck tank filled {t.TankFilled}.");
-        Console.WriteLine($"Race car oil changed: {rc.OilChanged}. Race car tires filled: {rc.TiresChanged}. Race car tank filled {rc.TankFilled}.");
+        Console.WriteLine($"Sedan oil changed: {s.OilChanged}. Sedan tires filled: {s.TiresChanged}. Sedan fuel tank filled {s.TankFilled}.");
+        Console.WriteLine($"Truck oil changed: {t.OilChanged}. Truck tires filled: {t.TiresChanged}. Truck fuel tank filled {t.TankFilled}.");
+        Console.WriteLine($"Race car oil changed: {rc.OilChanged}. Race car tires filled: {rc.TiresChanged}. fuel Race car tank filled {rc.TankFilled}.");
 
 
         Console.ReadLine();
