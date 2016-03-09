@@ -16,15 +16,15 @@ namespace GenericsAndExtensionMethods
 
             if (vehicle is Sedan)
             {
-                Console.WriteLine("Tires on sedan has been filled with regular gas.");
+                Console.WriteLine("Tires on sedan has been filled.");
             }
             else if (vehicle is Truck)
             {
-                Console.WriteLine("Tires on truck has been filled with diesel.");
+                Console.WriteLine("Tires on truck has been filled.");
             }
             else
             {
-                Console.WriteLine("Tires on race car has been filled with high performance fuel.");
+                Console.WriteLine("Tires on race car has been filled.");
             }
         }
     }
