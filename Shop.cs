@@ -11,7 +11,20 @@ namespace GenericsAndExtensionMethods
         public void FillUp(T vehicle)
         {
             vehicle.TankFilled = true;
-            Console.WriteLine("Tank have been filled.");
+
+            if (vehicle is Sedan)
+            {
+                Console.WriteLine("Tank have been filled with regular gas.");
+            }
+            else if (vehicle is Truck)
+            {
+                Console.WriteLine("Tank have been filled with diesel.");
+            }
+            else 
+            {
+                Console.WriteLine("Tank have been filled with high performance fuel.");
+            }
+
         }
 
         public void ChangeOil(T vehicle)
