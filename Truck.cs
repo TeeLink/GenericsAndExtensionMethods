@@ -8,5 +8,14 @@ namespace GenericsAndExtensionMethods
 {
     public class Truck : Vehicle
     {
+        public Truck()
+        {
+            this.GasType = GasType.Diesel;
+        }
+
+        public override string ToString()
+        {
+            return "Truck";
+        }
     }
 }

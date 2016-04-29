@@ -14,18 +14,9 @@ namespace GenericsAndExtensionMethods
         {
             vehicle.AreTiresChanged = true;
 
-            if (vehicle is Sedan)
-            {
-                Console.WriteLine("Tires on sedan has been filled.");
-            }
-            else if (vehicle is Truck)
-            {
-                Console.WriteLine("Tires on truck has been filled.");
-            }
-            else
-            {
-                Console.WriteLine("Tires on race car has been filled.");
-            }
+           
+                Console.WriteLine($"Tires on {vehicle.ToString()} has been filled.");
+          
         }
     }
 }

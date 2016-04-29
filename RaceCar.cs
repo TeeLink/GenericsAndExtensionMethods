@@ -8,5 +8,14 @@ namespace GenericsAndExtensionMethods
 {
     public class RaceCar : Vehicle
     {
+        public RaceCar()
+        {
+            this.GasType = GasType.HighPerformance;
+        }
+
+        public override string ToString()
+        {
+            return "Race car";
+        }
     }
 }

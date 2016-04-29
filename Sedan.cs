@@ -8,5 +8,14 @@ namespace GenericsAndExtensionMethods
 {
     public class Sedan : Vehicle
     {
+        public Sedan()
+        {
+            this.GasType = GasType.Regular;
+        }
+
+        public override string ToString()
+        {
+            return "Sedan";
+        }
     }
 }
